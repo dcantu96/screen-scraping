@@ -1,0 +1,5 @@
+<%= link_to 'Home', root_path %>
+
+<% @articles.each do |a| %>
+ <%= render 'article', article: a %>
+<% end %>

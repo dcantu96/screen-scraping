@@ -1,0 +1,32 @@
+<h1>Screen Scraping</h1>
+<p>Selecciona la categoria</p>
+
+<%= form_for :link, url: "home/show" do |form| %>
+  <%= form.hidden_field 'section', value: 'https://www.elnorte.com/sierramadre/' %>
+  <%= form.submit "Sierra Madre - El Norte" %>
+<% end  %>
+
+<%= form_for :link, url: "home/show" do |form| %>
+  <%= form.hidden_field 'section', value: 'https://www.elnorte.com/negocios/' %>
+  <%= form.submit "Negocios - El Norte" %>
+<% end  %>
+
+<%= form_for :link, url: "home/show" do |form| %>
+  <%= form.hidden_field 'section', value: 'https://www.elnorte.com/local/' %>
+  <%= form.submit "Local - El Norte" %>
+<% end  %>
+
+<%= form_for :link, url: "home/show" do |form| %>
+  <%= form.hidden_field 'section', value: 'https://www.elnorte.com/internacional/' %>
+  <%= form.submit "Internacional - El Norte" %>
+<% end  %>
+
+<%= form_for :link, url: "home/show" do |form| %>
+  <%= form.hidden_field 'section', value: 'https://www.elnorte.com/ciencia/' %>
+  <%= form.submit "Ciencia - El Norte" %>
+<% end  %>
+
+<%= form_for :link, url: "home/show" do |form| %>
+  <%= form.hidden_field 'section', value: 'https://www.elnorte.com/gente/' %>
+  <%= form.submit "Gente - El Norte" %>
+<% end  %>
